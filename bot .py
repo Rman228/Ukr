@@ -6,7 +6,7 @@ from redis import StrictRedis
 r = redis.from_url(
     'redis://h:pf4e1fd260c1827277563bc149a75632607a9ffd55fe43672a72e5f061cc87394')
 
-TOKEN = '986262845:AAHbjgSyGqaBN7saKh9tofXYnqBlaqCMOqM'
+TOKEN = '743096055:AAHNyFK9eOrKZVf6VtIij7NhQwm8bV46bDo'
 bot = telebot.TeleBot(TOKEN)
 value = 0
 price = 0
