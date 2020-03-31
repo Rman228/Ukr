@@ -4,7 +4,7 @@ import redis
 from redis import StrictRedis
 
 r = redis.from_url(
-    'redis://h:pf4e1fd260c1827277563bc149a75632607a9ffd55fe43672a72e5f061cc87394')
+    'redis://h:pf4e1fd260c1827277563bc149a75632607a9ffd55fe43672a72e5f061cc87394@ec2-63-33-226-95.eu-west-1.compute.amazonaws.com:14909')
 
 TOKEN = '743096055:AAHNyFK9eOrKZVf6VtIij7NhQwm8bV46bDo'
 bot = telebot.TeleBot(TOKEN)
