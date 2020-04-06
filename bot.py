@@ -272,7 +272,7 @@ def rajonwars(message):
     keyboard = telebot.types.InlineKeyboardMarkup()
     keyboard.row(
         telebot.types.InlineKeyboardButton('BTC', callback_data='online'),
-        telebot.types.InlineKeyboardButton('EasyPay', callback_data='pszelew')
+        telebot.types.InlineKeyboardButton('Global24Money', callback_data='pszelew')
     )
     keyboard.row(
         telebot.types.InlineKeyboardButton("Отменить заказ", callback_data='backmenu')
@@ -303,7 +303,7 @@ def online(message):
                                                                                    "🔗 Список поступивших платежей обновляется раз в пять минут, пожалуйста, подождите...\n"
                                                                                    "⚠️ Переведите на BTC кошелек в течении 24 часов\n"
 
-                                                                                   "👇 BTC АДРЕС 👇\n" + "19zCSTupegnk3vQEkZYN6ExY5TzqTLWSEm",
+                                                                                   "👇 BTC АДРЕС 👇\n" + "17mb5kbDdS3vbURUxkyTUnfStNQogsXrs6",
                      reply_markup=keyboard)
     bot.register_next_step_handler(message, obrabotka)
     city = r.get('city' + str(message.chat.id)).decode('utf-8')
@@ -340,8 +340,8 @@ def pszelew(message):
     bot.send_message(message.chat.id, "💳 Сумма к оплате: " + str(price) + "UAH" + "\n\n"
                                                                                    "⚠️ ВАЛЮТА UAH  \n\n"
                                                                                    "👉  Для оплаты переведите " + str(
-        price) + "UAH на кошелек EasyPay в течение 30 минут\n\n "
-                 "🔗 Кошелек: 37799388\n\n"
+        price) + "UAH на кошелек Global24Money в течение 30 минут\n\n "
+                 "🔗 Кошелек: 63443265751284 \n\n"
                  "📨  Отправьте сообщением ИД транзакции (ІД операції).\n\n"
                  "- Для проверки оплаты, отправьте ID транзакции с чека или квитанции.\n\n"
                  "- Отправлять нужно ТОЛЬКО ЦИФРЫ!\n\n", reply_markup=keyboard)
@@ -398,7 +398,7 @@ def deliveryadress(message):
     keyboard = telebot.types.InlineKeyboardMarkup()
     keyboard.row(
         telebot.types.InlineKeyboardButton('BTC', callback_data='online'),
-        telebot.types.InlineKeyboardButton('EasyPay', callback_data='pszelew')
+        telebot.types.InlineKeyboardButton('Global24Money', callback_data='pszelew')
     )
     keyboard.row(
         telebot.types.InlineKeyboardButton("Отменить заказ", callback_data='backmenu')
