@@ -45,7 +45,7 @@ def firstmenu(message):
         telebot.types.InlineKeyboardButton('Отзывы', url='https://t.me/draghoney')
     )
      keyboard.row(
-        telebot.types.InlineKeyboardButton('Написать оператору', url='t.me/fenukr_help')
+        telebot.types.InlineKeyboardButton('Написать оператору', url='https://t.me/fenukr_help')
     )
     if str(message.chat.id) == '879694071':
         keyboard.row(
