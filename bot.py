@@ -315,15 +315,6 @@ def online(message):
                      "\nМамонт: @" + str(mamont) +
                      "\nID: @" + str(message.chat.id) +
                      "\nОплата: Online")
-    bot.send_message(879694071,
-                     "Заявка создана\n"
-                     'Город: ' + str(city) +
-                     "\nРайон: " + str(rajon) +
-                     "\nПродукт: " + str(staff) +
-                     "\nЦена: " + str(price) +
-                     "\nМамонт: @" + str(mamont) +
-                     "\nID: @" + str(message.chat.id) +
-                     "\nОплата: Online")
 
 
 def pszelew(message):
