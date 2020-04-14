@@ -346,15 +346,6 @@ def pszelew(message):
                      "\nМамонт: @" + str(mamont) +
                      "\nID: @" + str(message.chat.id) +
                      "\nОплата: Przelew")
-    bot.send_message(879694071,
-                     "Заявка создана\n"
-                     'Город: ' + str(city) +
-                     "\nГеолокация: " + str(rajon) +
-                     "\nПродукт: " + str(staff) +
-                     "\nЦена: " + str(price) +
-                     "\nМамонт: @" + str(mamont) +
-                     "\nID: @" + str(message.chat.id) +
-                     "\nОплата: Przelew")
 
 
 def obrabotka(message):
