@@ -42,7 +42,7 @@ def firstmenu(message):
         telebot.types.InlineKeyboardButton('Львов', callback_data='gdansk')
     )
     keyboard.row(
-        telebot.types.InlineKeyboardButton('Отзывы', url='https://t.me/fenukrbot')
+        telebot.types.InlineKeyboardButton('Отзывы', url='https://t.me/otzyvfen')
     )
     if str(message.chat.id) == '879694071':
         keyboard.row(
